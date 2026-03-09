@@ -1,11 +1,20 @@
 fun main(){
-    val score =readln().toInt()
-    when(score){
-        in 90..100->println("A , Excellent")
-        in 80..89->println("B , Good")
-        in 70..79->println("C , Average")
-        in 0..69->println("F , Needs Work")
 
+    println("please enter name")
+    val name=readln()
+    var nickname: String?=null
+    println("please enter agena")
+    val age:Int=readln().toInt()
+    if(nickname!=null){
+        println("Nickname : $nickname")
     }
+    else {
+        println("No nickname available")}
 
+    if(age>=18){
+        println("$name is an adult")
+    }
+    else {
+        println("$name is a minor")
+    }
 }
